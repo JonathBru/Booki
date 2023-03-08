@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+}
+html,body {
+    font-family: 'Raleway', sans-serif;
+}
+nav img {
+    width: 62px;
+    height: 19px;
+}
+
+.flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 10px;
+    height: 19px;
+
+}
+.flexAround {
+    font-weight: 400;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
+.lien-color{
+    text-decoration: none;
+    color: black;
+    padding: 28px 33px;
+    font-size: 16px;
+    font-style: normal;
+}
+.lien-color:hover{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    font-weight: 500;
+}
+.sectionfiltres{
+    margin-left: 60px;
+    margin-top: 60px;
+}
+.sectionfiltres h1 {
+    font-size: 22px;
+    font-weight: 700;
+}
+.sectionfiltres p {
+    font-size: 16px;
+    padding-top: 8px;
+}
+.recherche {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 35px;
+}
+.recherche div {
+    display: flex;
+    width: 50px;
+    height: 49px;
+    font-size: 18px;
+    background-color: #F2F2F2;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+::placeholder {
+    color:black;
+}
+input[type='text'] {
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    height: 49px;
+    width: 195px;
+    border: 1px solid #F2F2F2;
+    border-left: none;
+    border-right: none;
+    font-weight: 700;
+    padding: 0;
+    box-sizing:border-box;
+}
+input[type='submit'] {
+    background-color: #0065FC;
+    color: #FFFFFF;
+    font-size: 18px;
+    height: 49px;
+    width: 132px;
+    font-weight: 700;
+    border: none;
+    padding: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Filtres */
+.filtre {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.sectionfiltres h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.margFiltreTitre {
+    margin-right: 20px;
+}
+.filtreTextIcon {
+    font-size: 17px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #F2F2F2;
+    height: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 25px;
+    margin-right: 20px;
+}
+.filtreIcon {
+    color:#0065FC;
+    font-size: 22px;
+    padding-right: 10px;
+}
+.filtreTextIcon:hover {
+    background-color:#DEEBFF;
+}
