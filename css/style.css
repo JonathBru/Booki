@@ -68,7 +68,7 @@ nav img {
 .sectionFiltres h1 {
     font-size: 22px;
 }
-.sectionFiltres p {
+.sectionFiltres > p {
     font-size: 16px;
     padding-top: 8px;
 }
@@ -177,7 +177,6 @@ button > .manGlass {
 }
 .info {
     display: flex;
-    font-size: 16px;
     margin:35px 0;
     align-items: center;
 }
@@ -185,6 +184,7 @@ button > .manGlass {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     width: 24px;
     height: 24px;
     border: 1px solid var(--filter-border-color);
