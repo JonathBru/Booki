@@ -2,12 +2,13 @@
 <html lang="fr">
 
 <head>
-        <meta charset="utf-8" >
+        <meta charset="UTF-8" >
         <title>Booki</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet" >
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
             integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
             crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,68 +19,80 @@
 
         <header>
             <nav>
-                <div class="flexBetween">
-
+                <section class="menu">
                     <a href="index.html">
-                        <img src="images/logo/Booki.png" alt="Logo_Booki" width="120px" height="50px">
+                        <img src="images/logo/Booki.png" alt="Logo_Booki">
                     </a>
-                    <div class="flexAround">
+                    <div class="lienMenu">
                         <div>
-                            <a class="lien-color" href="#" >Hébergements</a>
+                            <a class="lien-color" href="#ancreHebergements">Hébergements</a>
                         </div>
                         <div>
-                            <a class="lien-color" href="#" >Activités</a>
+                            <a class="lien-color" href="#ancreActivites">Activités</a>
                         </div>
-
                     </div>
-                </div>
+                </section>
             </nav>
+
             <section class="sectionFiltres">
-                <div>
-                    <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p> En plein centre-ville ou en pleine nature </p>
-                </div>
+                <h1> Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p> En plein centre-ville ou en pleine nature </p>
+
                 <div class="recherche">
                     <div>
                         <i class="fa-solid fa-location-dot blackIcon"></i>
                     </div>
                         <form action="" class="formulaire">
                         <input type="text" placeholder="Marseille, France" />
-                        <input type="submit" value="Rechercher">
+                        <button type="submit">
+                            <i class="fa-sharp fa-solid fa-magnifying-glass manGlass"></i>
+                            <span id="buttonResearch">Rechercher</span>
+                        </button>
                 </div>
 
                 <div class="filtre">
                     <div class="margFiltreTitre"><h2>Filtres</h2></div>
-                    <div class="filtreTextIcon">
-                        <i class="fa-solid fa-money-bill-wave filtreIcon"></i>
-                        <div>Économique</div>
+                    <div class="containerFiltres">
+                        <a href="#">
+                            <article class="filtreTextIcon">
+                                <i class="fa-solid fa-money-bill-wave filtreIcon"></i>
+                                <p>Économique</p>
+                            </article>
+                        </a>
+                        <a href="#">
+                            <article class="filtreTextIcon">
+                                <i class="fa-solid fa-person filtreIcon"></i>
+                                <p>Familial</p>
+                            </article>
+                        </a>
+                        <a href="#">
+                            <article class="filtreTextIcon">
+                                <i class="fa-solid fa-heart filtreIcon"></i>
+                                <p>Romantique</p>
+                            </article>
+                        </a>
+                        <a href="#">
+                            <article class="filtreTextIcon">
+                                <i class="fa-solid fa-fire filtreIcon"></i>
+                                <div><p>Nos pépites</p></div>
+                            </article>
+                        </a>
                     </div>
-                    <div class="filtreTextIcon">
-                        <i class="fa-solid fa-person filtreIcon"></i>
-                        <div>Familial</div>
-                    </div>
-                    <div class="filtreTextIcon">
-                        <i class="fa-solid fa-heart filtreIcon"></i>
-                        <div>Romantique</div>
-                    </div>
-                    <div class="filtreTextIcon">
-                        <i class="fa-solid fa-fire filtreIcon"></i>
-                        <div>Nos pépites</div>
-                    </div>
+                </div>
+
+                <div class="info">
+                    <div> 
+                        <i class="fa-solid fa-info infoIcon"></i>
+                    </div> 
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>
         </header>
+
         <main>
             
-            <div class="info">
-                <div> 
-                    <i class="fa-solid fa-info infoIcon"></i>
-                </div> 
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </div>
-
-            <section class="hebergementAndPopulaires">
-                <div class="hebergements">
+            <section class="hebergementsAndPopulaires">
+                <div class="hebergements" id="ancreHebergements">
                     <div class="HebergementTitle">
                         <h2 class="mainTitle">Hébergements à Marseille</h2>
                     </div>
@@ -97,6 +110,7 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutralStar" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
                                 </div>
                             </article>
                         </a>
@@ -113,6 +127,7 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutralStar" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
                                 </div>
                             </article>
                         </a>
@@ -129,6 +144,7 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutralStar" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
                                 </div>
                             </article>
                         </a>
@@ -145,6 +161,7 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutralStar" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
                                 </div>
                             </article>
                         </a>
@@ -161,6 +178,7 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutralStar" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
                                 </div>
                             </article>
                         </a>
@@ -177,13 +195,14 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutralStar" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
                                 </div>
                             </article>
                         </a>
                     </div>
                     <a class="scroller" href="#"><p>Afficher plus</p></a>
-                    
                 </div>
+
                 <div class="populaires">
                     <div class="populairesTitle">
                         <h2 class="mainTitle">Les plus populaires</h2>
@@ -203,6 +222,7 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutralStar" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
                                 </div>
                             </article>
                         </a>
@@ -219,6 +239,7 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutralStar" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
                                 </div>
                             </article>
                         </a>
@@ -235,20 +256,21 @@
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutralStar" aria-hidden="true"></i>
                                         <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
                                 </div>
                             </article>
                         </a>
                     </div>
                 </div>
             </section>
-            <section class="activites">
-                <div class="activitesTitle">
+
+            <section class="activites" id="ancreActivites">
                     <h2 class="mainTitle">Activités à Marseille</h2>
-                </div>
+
                 <div class="activitesCards">
                     <a href="#" class="clickCard">
                         <article class="bigCard">
-                            <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                            <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="image du Vieux-Port small">
                             <div class="bigCardContent">
                                 <h3 class="cardTitle">Vieux-Port</h3>
                             </div>
@@ -256,7 +278,7 @@
                     </a>
                     <a href="#" class="clickCard">
                         <article class="bigCard">
-                            <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+                            <img src="./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="image du fort de Pomègues medium">
                             <div class="bigCardContent">
                                 <h3 class="cardTitle">Fort de Pomègues</h3>
                             </div>
@@ -264,7 +286,7 @@
                     </a>
                     <a href="#" class="clickCard">
                         <article class="bigCard">
-                            <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+                            <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="image du parc national des Calanques small">
                             <div class="bigCardContent">
                                 <h3 class="cardTitle">Parc national des Calanques</h3>
                             </div>
@@ -272,7 +294,7 @@
                     </a>
                     <a href="#" class="clickCard">
                         <article class="bigCard">
-                            <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+                            <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="image de Notre Dame de la Garde small">
                             <div class="bigCardContent">
                                 <h3 class="cardTitle">Notre-Dame-de-la-Garde</h3>
                             </div>
@@ -281,6 +303,7 @@
                 </div>
             </section>
         </main>
+
         <footer>
             <div class="footerContainer">
                 <div class="navigation">
